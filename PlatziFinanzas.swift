@@ -97,8 +97,35 @@ if accountTotal > 1_000_000 {
   print("No tenemos nada de dinero =O")
 }
 
-// Este es un ejemplo de funcion en una constante. El codigo despues del signo ? 
+// Este es un ejemplo de funcion en una constante. El codigo despues del signo ?
 // se ejecuta su se cumple la condicion. Si no entonces se ejecuta el codigo despues del :
 let hasMoney = accountTotal > 1_000_000 ? "Somos ricos" : "No tenemos dinero"
 
 print(HasMoney)
+
+var age = 20
+
+var tax = 1.0
+
+switch age {
+case 1...17:
+    print("No podemos dar una tarjeta de credito")
+case 18...22:
+  tax = 2
+  print("Tasa de interes es del 2%")
+case 23...25:
+  tax = 1.5
+  print("La tasa de interes es del 1.5%")
+default:
+  print("La tasa de iteres ed del 1%")
+}
+
+let bankType = "B"
+
+switch bankType {
+case "B":
+  print("Es el Banco B")
+default:
+  print("Es otro banco")
+
+}
