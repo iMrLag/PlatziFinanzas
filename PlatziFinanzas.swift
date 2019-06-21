@@ -74,7 +74,7 @@ var transactionsDict: [String:[Float]] = [
   "4nov": []
   "5nov": [10],
 ]
-// Muestra los gatos de la raw con el id "5nov"
+// Muestra los gatos from the raw con el id "5nov"
 print(transactionsDict["5nov"])
 // Muestra todas las llaves dentro de la variable
 print(transactionsDict.keys)
@@ -84,3 +84,21 @@ print(transactionsDict.keys)
 print(transactionsDict.isEmpty)
 // Cuenta cuantos elementos hay dentro de nuestra variable
 print(transactionsDict.count)
+
+print(accountTotal)
+
+accountTotal -= 300_000
+
+if accountTotal > 1_000_000 {
+  print("Somos ricos")
+} else if accountTotal > 0 {
+    print("Tenemos algo de dinero")
+} else {
+  print("No tenemos nada de dinero =O")
+}
+
+// Este es un ejemplo de funcion en una constante. El codigo despues del signo ? 
+// se ejecuta su se cumple la condicion. Si no entonces se ejecuta el codigo despues del :
+let hasMoney = accountTotal > 1_000_000 ? "Somos ricos" : "No tenemos dinero"
+
+print(HasMoney)
