@@ -11,3 +11,9 @@ let fullName = "\(name) \(lastName)"
 accountTotal +=  100_000
 
 print("accountTotal")
+
+var isActive = !fullName.isEmpty
+
+print("isActive")
+
+print("Hola me llamo \(name) \(lastName) y tengo \(accountTotal)" en mi cuenta de banco.)
